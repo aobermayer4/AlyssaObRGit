@@ -1,5 +1,5 @@
 Candidates <- c("Jeb","Donald","Ted","Marco","Carly","Hillary","Bernie")
-ABC_Political_Poll_Results <- c(4,62,51,21,1,14,15)
+ABC_Political_Poll_Results <- c(4,62,51,21,2,14,15)
 CBS_Political_Poll_Results <- c(12,75,43,19,1,21,19)
 CandidatesPoll.df <- data.frame(Candidates, ABC_Political_Poll_Results, CBS_Political_Poll_Results)
 print(CandidatesPoll.df)
