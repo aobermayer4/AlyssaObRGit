@@ -1,0 +1,12 @@
+Package: workflowr
+Type: Package
+Title: Analysis of customer appointment and workflow data
+Version: 0.0.0.9000
+Author: person("Alyssa", "Obermayer", "email = aobermayer@usf.edu", role = c("aut", "cre")
+Description: This package will take data that overviews the number and status
+    of customer appointments along with data of technician workflow and analyze
+    them together and provide visuals
+Depends: R (>= 3.6.3)
+License: CCO
+Encoding: UTF-8
+LazyData: true
