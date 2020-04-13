@@ -1,0 +1,27 @@
+---
+title: "Module 12 Markdown Trees Example"
+author: "Alyssa Obermayer"
+date: "4/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown of Trees Data Set
+
+```{r trees}
+summary(trees)
+```
+
+## Including Plots
+
+```{r echo=FALSE}
+require(stats); require(graphics)
+pairs(trees, panel = panel.smooth, main = "Trees Data")
+plot(Volume ~ Girth, data = trees, log = "xy", main = "Volume by Girth of Trees Data")
+coplot(log(Volume) ~ log(Girth) | Height, data = trees,
+       panel = panel.smooth)
+```
+
